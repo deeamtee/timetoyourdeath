@@ -1,10 +1,17 @@
 .root {
     display: grid;
-    grid-template-columns: repeat(10, minmax(30px, 1fr));
+    grid-template-columns: repeat(10, minmax(24px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 10px; 
 }
 
 .root_type_month {
-    grid-template-columns: repeat(24, minmax(30px, 1fr));
+    grid-template-columns: repeat(24, minmax(24px, 1fr));
+}
+
+
+@media screen and (max-width: 868px) {
+    .root_type_month {
+        grid-template-columns: repeat(12, 1fr);
+    }
 }

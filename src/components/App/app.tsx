@@ -43,7 +43,7 @@ function App() {
                     </select>
                     <input type="color" value={color} onChange={handleChangeColor}/>
                 </div>
-                <h1>{capitalize(unit)} to your death</h1>
+                <h1 className={s.title}>{capitalize(unit)} to your death</h1>
                 <Days birthDay={birthDay} unit={unit} color={color} />
             </div>
         </div>
