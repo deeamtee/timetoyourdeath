@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
       '@shared': fileURLToPath(new URL('./src/shared', import.meta.url))
     }
   }
